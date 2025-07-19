@@ -121,7 +121,7 @@ const Form7931: React.FC<{ evaluatorInfo: EvaluatorInfo }> = ({ evaluatorInfo })
         setIsGeneratingPdf(true);
         try {
             const { PDFDocument, rgb } = window.PDFLib;
-            const formUrl = 'assets/DA-Form-7931.pdf';
+            const formUrl = './assets/DA-Form-7931.pdf';
             const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer());
             const pdfDoc = await PDFDocument.load(formPdfBytes);
             const pages = pdfDoc.getPages();
