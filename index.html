@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="assets/icon-192x192.png" />
+    <link rel="icon" type="image/png" href="./assets/icon-192x192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DA Form Grader</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     <meta name="theme-color" content="#334155">
     
     <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
@@ -39,17 +39,16 @@
         -moz-appearance: textfield;
       }
     </style>
-  <link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body>
     <div id="root"></div>
     <!-- Set type to "text/babel" and specify presets to transpile TSX -->
     <!-- data-type="module" preserves ES module behavior for imports -->
-    <script type="text/babel" data-presets="react,typescript" data-type="module" src="index.tsx"></script>
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('sw.js').then(registration => {
+          navigator.serviceWorker.register('./sw.js').then(registration => {
             console.log('ServiceWorker registration successful with scope: ', registration.scope);
           }, err => {
             console.log('ServiceWorker registration failed: ', err);
@@ -57,6 +56,5 @@
         });
       }
     </script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+  </body>
 </html>
