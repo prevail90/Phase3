@@ -1,0 +1,6 @@
+
+{
+  "name": "DA Form 7931 Grader",
+  "description": "An application to digitally fill out and grade the ARMY WHEELED VEHICLE (AWV) OPERATOR EVALUATION SCORE SHEET (DA Form 7931), and generate a PDF copy.",
+  "requestFramePermissions": []
+}
